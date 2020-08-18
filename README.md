@@ -1,5 +1,5 @@
 # MIAUAU
-Django web application with that classifies submitted images as cats or dogs.
+Django web application that classifies submitted images as cats or dogs.
 ## The dataset
 https://www.kaggle.com/c/dogs-vs-cats/data?select=train.zip
 
