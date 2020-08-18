@@ -1,0 +1,17 @@
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Miauau!</title> 
+</head> 
+<body> 
+    <!-- form to submit the image -->
+    <center><img src="/media/images/miauau.png" style="width:500px;height:500px;"> </center>
+    <p><center> CAT OR DOG? </center></p>
+    <p><center> Pick an image to be classified by Artificial Intelligence! </center></p>
+    <center><form method = "post" enctype="multipart/form-data"> 
+        {% csrf_token %} 
+        {{ form.as_p }} 
+        <button type="submit">Submit</button> 
+    </form> </center>
+    <!-- takes the user to the gallery of all sumbitted images -->
+    <center><a href="gallery" class="btn btn-default">Gallery</a></center>
+</body> 

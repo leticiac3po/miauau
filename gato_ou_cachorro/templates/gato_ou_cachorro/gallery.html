@@ -1,0 +1,22 @@
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Gallery</title> 
+  
+      <meta name="viewport" content="width=device-width, initial-scale=1"> 
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+      </script> 
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> 
+      </script> 
+</head> 
+<body> 
+    <!-- displays all images and results -->
+    {% for image in images %} 
+        <div class="col-md-4"> 
+            <p> <center> {{ image.lbl }} </center> </p>
+            <p> <center> {{ image.prob }} </center> </p>
+            <center><img src="{{ image.image.url }}" class="img-responsive" style="width:500px;height:500px;" /> </center>
+        </div> 
+    {% endfor %} 
+  
+</body>
